@@ -43,25 +43,31 @@ The model detects the following traffic-related classes:
 traffic-object-detection-api
 │
 ├── app
-│   └── main.py              # FastAPI application
+│   └── main.py                 # FastAPI application
 │
 ├── src
 │   ├── data
 │   │   └── convert_visdrone_to_yolo.py
 │   │
-│   ├── training
-│   │   └── train_yolo.py
+│   ├── inference
+│   │   └── predict.py
 │   │
-│   └── inference
-│       └── predict.py
+│   └── training
+│       └── train_yolo.py
 │
-├── datasets                 # training dataset
-├── models                   # trained weights
-├── runs                     # predictions and uploads
-├── tests                    # sample images for testing
+├── models
+│   └── best.pt                 # trained YOLO model
+│
+├── tests
+│   ├── sample_1.jpg
+│   └── sample_2.jpg
+│
+├── runs                       # prediction outputs (ignored by git)
+├── datasets                   # dataset files (ignored by git)
 │
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
