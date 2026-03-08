@@ -244,6 +244,8 @@ The API returns:
 * annotated image
 
 Example prediction:
+![8577c305306a40a7ad5bbb68403b8490_prediction](https://github.com/user-attachments/assets/ead89d2c-9a5f-4d3d-8651-0a3cedeafd5b)
+
 
 ```
 runs/predict/example_prediction.jpg
